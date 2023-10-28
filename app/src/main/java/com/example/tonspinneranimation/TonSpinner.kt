@@ -22,7 +22,6 @@ fun TonSpinner(
     LaunchedEffect(Unit){
         coroutineScope.launch {
             while(true) {
-                println("###################")
                 phase.value += 1
                 if(phase.value == 5) phase.value = 1
                 delay(150)
